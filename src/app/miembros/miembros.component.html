@@ -1,0 +1,27 @@
+<div> 
+    
+    <div   >
+            
+        <table style="position: relative; z-index: 9; width: 80%; background-color: wheat; margin: 0 auto;" border="3" [cellPadding]="6"  >
+            <tr style="text-align: center;" ><th [colSpan]="6" >Lista de miembros</th></tr>
+            <tr><th>No#</th><th>Nombre</th><th>Sexo</th><th>Email</th><th>Fecha de Nac.</th></tr>
+            
+            <tr *ngFor="let h of misMiembros, let i=index">
+                <td>{{i+1}}</td>
+                <td>{{h.nombre}}</td>
+                <td>{{h.sexo}}</td>
+                <td>{{h.correo}}</td>
+                <td>{{h.fecha}}</td>
+            </tr>
+        </table>
+       
+    </div>
+    <img style="position: absolute; z-index: 1; top: 10%; right:  5%;" width="30%" height="30%" src="/assets/img/efectos (1).png" alt="">
+
+   
+</div>
+
+<img style="position: absolute; z-index: 1; top: 40%; left:  10%;" width="30%" height="30%" src="/assets/img/efectos (2).png" alt="">
+<img style="position: absolute; z-index: 1; top: 60%; right:  10%;" width="40%" height="40%" src="/assets/img/efectos (3).png" alt="">
+
+

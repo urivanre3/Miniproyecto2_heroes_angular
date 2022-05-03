@@ -1,0 +1,29 @@
+
+<div class="fondo_heroes"> 
+ 
+  <div style="padding: 2%;"> 
+    <h1 class="text-center" style="background-color: white;" >Heroes <small>Marvel Y DC</small></h1>
+
+    <div class="card-columns">
+    
+      <div class="card" *ngFor="let h of misHeroes, let i=index" >
+        <img src={{h.img}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{h.nombre}}</h5>
+          <p class="card-text">{{h.bio}}</p>
+          <p class="card-text"><small class="text-muted">{{h.aparicion}}</small></p>
+        </div>
+    
+          <a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block">VerMAS</a>
+        
+      </div>
+    
+    </div>
+  </div>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  

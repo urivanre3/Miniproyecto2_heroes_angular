@@ -1,0 +1,25 @@
+.video{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    background-color: black;
+    
+        
+}
+
+.div_texto{
+    text-align: justify;
+    font-size: xx-large;
+    background-color: whitesmoke;
+    padding: 2%;   
+    
+}
+
+.bg-img{
+    
+   width: 100%;
+   background: url('/assets/img/fondoc\ \(1\).jpg') no-repeat center center fixed;
+   background-size: 100% 100%;
+
+   padding: 3%;
+   }

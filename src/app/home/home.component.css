@@ -1,0 +1,12 @@
+.bg-img{
+    padding-top: 3%;
+    min-height: 100vh;
+    height: 80%;
+   width: 100%;
+   background-image: url('/assets/img/fondoc\ \(1\).jpg')  ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   
+}

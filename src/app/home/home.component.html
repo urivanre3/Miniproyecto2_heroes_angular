@@ -1,0 +1,67 @@
+
+<div class="bg-img">
+  <div class="jumbotron" style="width: 50%; margin: 0 auto;" >
+    <div>    
+      <h1 class="display-4">Hola, Friki!</h1>
+      <p class="lead">¿Estas interesado en saber las ultimas novedades en tema de comics? Registrate en nuestra pagina para obtener noticias.</p>
+      <hr class="my-4">
+      <div style="text-align: center;">
+        <img src="/assets/img/Logobatman.jpg" alt="" style="width: 30%; height: 20%;">
+        <p style="text-align: center;">¡Unete a la comunidad!.</p>
+        <a class="btn btn-dark btn-lg"  data-toggle="modal" data-target="#modal_registro" href="#" role="button">Registrate aqui!</a>
+  
+      </div>
+  
+    </div>
+    
+  </div>
+ </div>
+  
+
+
+<div class="modal fade" id="modal_registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      
+      <div class="modal-body mx-3">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Formulario</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="md-form mb-2">          
+          <label  data-error="wrong" data-success="right" for="orangeForm-name">Nombre:</label>
+          <input [(ngModel)]="miembro.nombre" type="text" id="orangeForm-name" class="form-control validate">
+        </div>        
+        <div class="md-form mb-2">  
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Sexo:</label>
+          <p>                      
+            <input [(ngModel)]="miembro.sexo" type="radio" value="Masculino"  id="orangeForm-name" > Masculino
+            <input [(ngModel)]="miembro.sexo" type="radio" value="Femenino"  id="orangeForm-name" > Femenino
+          </p>         
+        </div>
+        <div class="md-form mb-2">          
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Correo electronico:</label>
+          <input [(ngModel)]="miembro.correo" type="email" id="orangeForm-email" class="form-control validate">
+         
+        </div>
+        <div class="md-form mb-2">          
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Fecha de nacimiento</label>
+          <input [(ngModel)]="miembro.fecha" type="date" id="orangeForm-pass" class="form-control validate">          
+        </div>
+
+        
+        
+
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button (click)="this.nuevoMiembro()" class="btn btn-primary">Registrar Datos</button>
+      </div>
+    </div>
+  </div>
+</div>
